@@ -1,76 +1,96 @@
-body{
-    background-color: #E0FCFF;
+* {
+    box-sizing: border-box;
 }
-.inputField {
-  background-color: mistyrose;
+
+body {
+    background-color: #E0FCFF; /* MistyRose의 보색 */
+    margin: 20px;
 }
-.inputField legend {
-  background-color: white;
-  border: 1px solid black;
+
+.inputField, .listField {
+    background-color: mistyrose;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
 }
+
+.inputField legend, .listField legend {
+    background-color: white;
+    border: 1px solid black;
+    padding: 2px 10px;
+}
+
+/* 스탯 영역 2열 배치 컨테이너 */
+.stat-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 .inputItem {
-  display: grid;
-  grid-template-columns: 100px auto;
-  /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+    margin-bottom: 5px;
 }
-.text-wrapper {
-  border: 1px solid black;
-  margin: 2px;
-  background-color: moccasin;
+
+.text-wrapper, .name {
+    border: 1px solid black;
+    margin: 2px;
+    background-color: moccasin;
+    text-align: center;
+    padding: 3px;
 }
-.inputText {
-  width: 97%;
-  height: 64%;
+
+/* 기존 클래스명 유지 */
+.inputText, .hp, .MP, .str, .int, .dex, .lux, .birthdate, .job, .sx {
+    width: 97%;
+    height: 30px;
+    border: 1px solid #999;
 }
-.inputNumber {
-  width: 97%;
-  height: 64%;
-}
-.selectCombo {
-  width: 100%;
-  height: 85%;
-}
-.inputImage {
-  display: block;
-}
-.showImage {
-  max-width: 100%;
-}
+
 .inputButtons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 5px;
 }
+
 .btn {
     border: 1px solid black;
-  width: 100%;
-  height: 100%;
-  background-color:cornsilk;
+    width: 100%;
+    height: 40px;
+    background-color: cornsilk;
+    cursor: pointer;
 }
-.btn-wrapper{
+
+.btn:hover {
+    background-color: #fff8dc;
 }
-.listField {
-  background-color: mistyrose;
-}
-.listField legend {
-  background-color: white;
-  border: 1px solid black;
-}
+
+/* 리스트 영역 */
 .listTitleRow {
-  display: grid;
-  grid-template-columns: 120px 120px auto;
+    display: grid;
+    grid-template-columns: 100px 100px 80px 80px 80px 1fr;
+    font-weight: bold;
 }
+
 .listDataRow {
-  display: grid;
-  grid-template-columns: 120px 120px auto;
+    display: grid;
+    grid-template-columns: 100px 100px 80px 80px 80px 1fr;
+    background-color: mediumpurple;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #eee;
 }
-.listDataRow{
-  background-color: mediumpurple;
+
+.listDataRow:hover {
+    background-color: mediumslateblue;
 }
-.listDataRow:hover{
-  background-color: mediumslateblue;
-}
-footer{
-  margin: 5px;
-  color: antiquewhite;
+
+footer {
+    margin: 5px;
+    color: #555;
+    text-align: center;
 }
