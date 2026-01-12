@@ -1,0 +1,73 @@
+.inputField {
+  background-color: mistyrose;
+}
+.inputField legend {
+  background-color: white;
+  border: 1px solid black;
+}
+.inputItem {
+  display: grid;
+  grid-template-columns: 100px auto;
+  /* justify-content: space-between; */
+}
+.text-wrapper {
+  border: 1px solid black;
+  margin: 2px;
+  background-color: moccasin;
+}
+.inputText {
+  width: 97%;
+  height: 64%;
+}
+.inputNumber {
+  width: 97%;
+  height: 64%;
+}
+.selectCombo {
+  width: 100%;
+  height: 85%;
+}
+.inputImage {
+  display: block;
+}
+.showImage {
+  max-width: 100%;
+}
+.inputButtons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.btn {
+    border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  background-color:cornsilk;
+}
+.btn-wrapper{
+}
+.listField {
+  background-color: mistyrose;
+}
+.listField legend {
+  background-color: white;
+  border: 1px solid black;
+}
+.listTitleRow {
+  display: grid;
+  grid-template-columns: 120px 120px auto;
+}
+.listDataRow {
+  display: grid;
+  grid-template-columns: 120px 120px auto;
+}
+.listDataRow{
+  background-color: mediumpurple;
+}
+.listDataRow:hover{
+  background-color: mediumslateblue;
+}
+footer{
+  margin: 5px;
+  color: antiquewhite;
+}
