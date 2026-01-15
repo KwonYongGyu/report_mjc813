@@ -5,9 +5,9 @@ class Npc {
       name: "다리우스",
       cls: "W",
       sx: "man",
-      hp: "1200",
+      hp: "1200", // hp,mp,str,int,dex,lux 숫자인데 ""로 표시했었음
       mp: "150",
-      str: "85",
+      str: "85",  
       int: "20",
       dex: "45",
       lux: "30",
